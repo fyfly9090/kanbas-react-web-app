@@ -3,4 +3,10 @@
     background-color: white;
     border-left: 3px solid black !important;
 }
+
+#wd-courses-navigation > .list-group-item.allborder {
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
   

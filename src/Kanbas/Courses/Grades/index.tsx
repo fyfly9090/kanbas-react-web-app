@@ -2,9 +2,21 @@ import GradesControls from "./GradesControls";
 import { PiMagnifyingGlassLight } from "react-icons/pi";
 import { IoIosArrowDown } from "react-icons/io";
 import { FiFilter } from "react-icons/fi";
-import { BiExit } from "react-icons/bi";
+import { useParams } from "react-router";
+import * as db from "../../Database";
+import AllStudents from "./AllStudents";
 
 export default function Grages() {
+  const {cid} = useParams() as {cid: string};
+
+  const assignments = db.assignments;
+  const assignments_course = assignments.filter((assignment: any) => assignment.course === cid);
+
+  const enrollments = db.enrollments;
+ /*  const users = db.users; */
+  const usersID = enrollments.filter((enrollment: any) => enrollment.course === cid);
+
+  
     return (
         <div id="grades-page">
           <ul className="list-group rounded-0">
@@ -39,87 +51,24 @@ export default function Grages() {
                 Apply Filters
               </div>
             </li>
-            <li className="list-group-item border-0 pt-0">
+            <li className="list-group-item border-0 pt-0 table-responsive">
               <div id="grade-table" className="table-responsive">
                 <table className="table table-bordered list-table-border ">
                   <thead>
                     <tr>
-                      <th className="align-left bg-color">Student Name</th>
-                      <th className="table-content bg-color"><div>A1 SETUP</div><div>Out of 100</div></th>
-                      <th className="table-content bg-color"><div>A2 HTML</div><div>Out of 100</div></th>
-                      <th className="table-content bg-color"><div>A3 CSS</div><div>Out of 100</div></th>
-                      <th className="table-content bg-color"><div>A4 BOOTSTRAP</div><div>Out of 100</div></th>
-                      <th className="table-content bg-color"><div>A5 JavaScript</div><div>Out of 100</div></th>
-                      <th className="table-content bg-color"><div>A6 UIState</div><div>Out of 100</div></th>
-                      <th className="table-content bg-color"><div>Q1 </div><div>Out of 100</div></th>
-                      <th className="table-content bg-color"><div>Q2 </div><div>Out of 100</div></th>
-                      <th className="table-content bg-color"><div>Q3 </div><div>Out of 100</div></th>
-                      <th className="table-content bg-color"><div>Q4</div><div>Out of 100</div></th>
-                      <th className="table-content bg-color"><div>Q5</div><div>Out of 100</div></th>
-                      <th className="table-content bg-color"><div>Q6</div><div>Out of 100</div></th>
+                    <th className="align-left bg-color">Student Name</th>
+                      {assignments_course && assignments_course.map(assign => (
+                        <th className="table-content bg-color"><div>{assign.title}</div><div>Out of {assign.points}</div></th>
+                      ))}
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <th className="align-left th-style">Jane Adams</th>
-                      <th className="table-content">100%</th> <th className="table-content">96.67%</th>
-                      <th className="table-content">92.18%</th> <th className="table-content">66.22%</th>
-                      <th className="table-content">98%</th> <th className="table-content">99%</th>
-                      <th className="table-content">90%</th> <th className="table-content">85%</th>
-                      <th className="table-content">66.66%</th> <th className="table-content">90%</th>
-                      <th className="table-content">80%</th> <th className="table-content">100%</th>
-                    </tr> 
-                    <tr>
-                      <th className="align-left th-style bg-color">Christina Allen</th>
-                      <th className="table-content bg-color">100%</th> <th className="table-content bg-color">100%</th>
-                      <th className="table-content bg-color">100%</th> <th className="table-content bg-color">100%</th>
-                      <th className="table-content bg-color">95%</th> <th className="table-content bg-color">98.8%</th>
-                      <th className="table-content bg-color">100%</th> <th className="table-content bg-color">80%</th>
-                      <th className="table-content bg-color">70%</th> <th className="table-content bg-color">100%</th>
-                      <th className="table-content bg-color">83.3%</th> <th className="table-content bg-color">100%</th>
-                    </tr>
-                    <tr>
-                      <th className="align-left th-style">Samreen Ansari</th>
-                      <th className="table-content">100%</th> <th className="table-content">100%</th>
-                      <th className="table-content">100%</th> <th className="table-content">100%</th>
-                      <th className="table-content">96.67%</th> <th className="table-content">99%</th>
-                      <th className="table-content">88%</th> <th className="table-content">85%</th>
-                      <th className="table-content">83%</th> <th className="table-content">93%</th>
-                      <th className="table-content">90%</th> <th className="table-content">82%</th>
-                    </tr>
-                    <tr>
-                      <th className="align-left th-style bg-color">Han Bao</th>
-                      <th className="table-content bg-color">100%</th> <th className="table-content bg-color">100%</th>
-                      <th className="table-content py-0 ps-2 pe-0">
-                        <input type="text" className="grades-edit" value="88.03%"/>
-                        <BiExit className="mx-0 exit-btn-style"/>
-                      </th> 
-                      <th className="table-content bg-color">98.99%</th>
-                      <th className="table-content bg-color">100%</th> <th className="table-content bg-color">98.8%</th>
-                      <th className="table-content bg-color">99%</th> <th className="table-content bg-color">80.67%</th>
-                      <th className="table-content bg-color">84%</th> <th className="table-content bg-color">99.98%</th>
-                      <th className="table-content bg-color">97%</th> <th className="table-content bg-color">100%</th>
-                    </tr>
-                    <tr>
-                      <th className="align-left th-style">Mahi Sai Srinivas Bobbili</th>
-                      <th className="table-content">100%</th> <th className="table-content">96.67%</th>
-                      <th className="table-content">98.37%</th> <th className="table-content">100%</th>
-                      <th className="table-content">97.67%</th> <th className="table-content">95%</th>
-                      <th className="table-content">80%</th> <th className="table-content">100%</th>
-                      <th className="table-content">93%</th> <th className="table-content">68.9%</th>
-                      <th className="table-content">83%</th> <th className="table-content">88.7%</th>
-                    </tr>
-                    <tr>
-                      <th className="align-left th-style bg-color">Siran Cao</th>
-                      <th className="table-content bg-color">100%</th> <th className="table-content bg-color">100%</th>
-                      <th className="table-content bg-color">100%</th> <th className="table-content bg-color">100%</th>
-                      <th className="table-content bg-color">100%</th> <th className="table-content bg-color">98.8%</th>
-                      <th className="table-content bg-color">91%</th> <th className="table-content bg-color">99%</th>
-                      <th className="table-content bg-color">86%</th> <th className="table-content bg-color">94%</th>
-                      <th className="table-content bg-color">89%</th> <th className="table-content bg-color">97%</th>
-                    </tr>
+                      {usersID && usersID.map(stu => (
+                        <AllStudents uid={stu.user} assignments={assignments_course}/>
+                      ))}
                   </tbody>
                 </table>
+
               </div>
             </li>
           </ul>
