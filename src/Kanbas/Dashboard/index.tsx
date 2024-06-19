@@ -12,7 +12,7 @@ export default function Dashboard() {
                 {courses.map((course) => (
                   <div className="wd-dashboard-course col margin-element" style={{ width: "300px"}}>
                     <Link key={course._id} to={`/Kanbas/Courses/${course._id}/Home`} className="text-decoration-none">
-                      <div className="card rounded-3 overflow-hidden">
+                      <div className="card rounded-3 overflow-hidden" style={{height:"100%"}}>
                          <img src="/images/reactjs.jpg" height="{160}" />
                          <div className="card-body">
                            <span className="wd-dashboard-course-link" style={{textDecoration: "none", color: "navy", fontWeight: "bold"}}>
