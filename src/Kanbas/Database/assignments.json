@@ -133,5 +133,835 @@
         "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
       }, 
       "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
-      "due_date": "May 27 2024 11:59PM", "available_date": "May20 2024 12:00AM" }
+      "due_date": "May 27 2024 11:59PM", "available_date": "May20 2024 12:00AM" },
+
+      { "_id": "A401", "title": "Propulsion Assignment", "course": "RS104",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+                    "Links to each of the lab assignments",
+                   "Link to the Kanbas application",
+                   "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" : 100, "due" : "2024-05-13 11:59PM", "available": "2024-05-06 12:00AM",
+      "due_date": "May 13 2024 11:59PM", "available_date": "May 6 2024 12:00AM"},
+    { "_id": "A402", "title": "Combustion Analysis", "course": "RS104",
+       "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :29, "due" : "2024-05-20 11:59PM", "available": "2024-05-13 12:00AM",
+      "due_date": "May 20 2024 11:59PM", "available_date": "May 13 2024 12:00AM" },
+    { "_id": "A403", "title": "Nozzle Design Project", "course": "RS104",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+       ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
+      "due_date": "May 27 2024 11:59PM", "available_date": "May 20 2024 12:00AM" },
+
+
+      { "_id": "A501", "title": "Propulsion Assignment", "course": "RS105",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+                    "Links to each of the lab assignments",
+                   "Link to the Kanbas application",
+                   "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" : 100, "due" : "2024-05-13 11:59PM", "available": "2024-05-06 12:00AM",
+      "due_date": "May 13 2024 11:59PM", "available_date": "May 6 2024 12:00AM"},
+    { "_id": "A502", "title": "Combustion Analysis", "course": "RS105",
+       "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :29, "due" : "2024-05-20 11:59PM", "available": "2024-05-13 12:00AM",
+      "due_date": "May 20 2024 11:59PM", "available_date": "May 13 2024 12:00AM" },
+    { "_id": "A503", "title": "Nozzle Design Project", "course": "RS105",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+       ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
+      "due_date": "May 27 2024 11:59PM", "available_date": "May 20 2024 12:00AM" },
+
+      { "_id": "A601", "title": "Propulsion Assignment", "course": "RS106",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+                    "Links to each of the lab assignments",
+                   "Link to the Kanbas application",
+                   "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" : 100, "due" : "2024-05-13 11:59PM", "available": "2024-05-06 12:00AM",
+      "due_date": "May 13 2024 11:59PM", "available_date": "May 6 2024 12:00AM"},
+    { "_id": "A602", "title": "Combustion Analysis", "course": "RS106",
+       "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :29, "due" : "2024-05-20 11:59PM", "available": "2024-05-13 12:00AM",
+      "due_date": "May 20 2024 11:59PM", "available_date": "May 13 2024 12:00AM" },
+    { "_id": "A603", "title": "Nozzle Design Project", "course": "RS106",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+       ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
+      "due_date": "May 27 2024 11:59PM", "available_date": "May 20 2024 12:00AM" },
+
+      { "_id": "A701", "title": "Propulsion Assignment", "course": "RS107",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+                    "Links to each of the lab assignments",
+                   "Link to the Kanbas application",
+                   "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" : 100, "due" : "2024-05-13 11:59PM", "available": "2024-05-06 12:00AM",
+      "due_date": "May 13 2024 11:59PM", "available_date": "May 6 2024 12:00AM"},
+    { "_id": "A702", "title": "Combustion Analysis", "course": "RS107",
+       "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :29, "due" : "2024-05-20 11:59PM", "available": "2024-05-13 12:00AM",
+      "due_date": "May 20 2024 11:59PM", "available_date": "May 13 2024 12:00AM" },
+    { "_id": "A703", "title": "Nozzle Design Project", "course": "RS107",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+       ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
+      "due_date": "May 27 2024 11:59PM", "available_date": "May 20 2024 12:00AM" },
+
+      { "_id": "A801", "title": "Propulsion Assignment", "course": "RS108",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+                    "Links to each of the lab assignments",
+                   "Link to the Kanbas application",
+                   "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" : 100, "due" : "2024-05-13 11:59PM", "available": "2024-05-06 12:00AM",
+      "due_date": "May 13 2024 11:59PM", "available_date": "May 6 2024 12:00AM"},
+    { "_id": "A802", "title": "Combustion Analysis", "course": "RS108",
+       "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :29, "due" : "2024-05-20 11:59PM", "available": "2024-05-13 12:00AM",
+      "due_date": "May 20 2024 11:59PM", "available_date": "May 13 2024 12:00AM" },
+    { "_id": "A803", "title": "Nozzle Design Project", "course": "RS108",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+       ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
+      "due_date": "May 27 2024 11:59PM", "available_date": "May 20 2024 12:00AM" },
+
+      { "_id": "A901", "title": "Propulsion Assignment", "course": "RS109",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+                    "Links to each of the lab assignments",
+                   "Link to the Kanbas application",
+                   "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" : 100, "due" : "2024-05-13 11:59PM", "available": "2024-05-06 12:00AM",
+      "due_date": "May 13 2024 11:59PM", "available_date": "May 6 2024 12:00AM"},
+    { "_id": "A902", "title": "Combustion Analysis", "course": "RS109",
+       "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :29, "due" : "2024-05-20 11:59PM", "available": "2024-05-13 12:00AM",
+      "due_date": "May 20 2024 11:59PM", "available_date": "May 13 2024 12:00AM" },
+    { "_id": "A903", "title": "Nozzle Design Project", "course": "RS109",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+       ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
+      "due_date": "May 27 2024 11:59PM", "available_date": "May 20 2024 12:00AM" },
+
+      { "_id": "A111", "title": "Propulsion Assignment", "course": "RS110",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+                    "Links to each of the lab assignments",
+                   "Link to the Kanbas application",
+                   "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" : 100, "due" : "2024-05-13 11:59PM", "available": "2024-05-06 12:00AM",
+      "due_date": "May 13 2024 11:59PM", "available_date": "May 6 2024 12:00AM"},
+    { "_id": "A112", "title": "Combustion Analysis", "course": "RS110",
+       "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :29, "due" : "2024-05-20 11:59PM", "available": "2024-05-13 12:00AM",
+      "due_date": "May 20 2024 11:59PM", "available_date": "May 13 2024 12:00AM" },
+    { "_id": "A113", "title": "Nozzle Design Project", "course": "RS110",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+       ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
+      "due_date": "May 27 2024 11:59PM", "available_date": "May 20 2024 12:00AM" },
+
+      { "_id": "A121", "title": "Propulsion Assignment", "course": "RS111",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+                    "Links to each of the lab assignments",
+                   "Link to the Kanbas application",
+                   "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" : 100, "due" : "2024-05-13 11:59PM", "available": "2024-05-06 12:00AM",
+      "due_date": "May 13 2024 11:59PM", "available_date": "May 6 2024 12:00AM"},
+    { "_id": "A122", "title": "Combustion Analysis", "course": "RS111",
+       "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :29, "due" : "2024-05-20 11:59PM", "available": "2024-05-13 12:00AM",
+      "due_date": "May 20 2024 11:59PM", "available_date": "May 13 2024 12:00AM" },
+    { "_id": "A123", "title": "Nozzle Design Project", "course": "RS111",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+       ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
+      "due_date": "May 27 2024 11:59PM", "available_date": "May 20 2024 12:00AM" },
+
+      { "_id": "A131", "title": "Propulsion Assignment", "course": "RS112",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+                    "Links to each of the lab assignments",
+                   "Link to the Kanbas application",
+                   "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" : 100, "due" : "2024-05-13 11:59PM", "available": "2024-05-06 12:00AM",
+      "due_date": "May 13 2024 11:59PM", "available_date": "May 6 2024 12:00AM"},
+    { "_id": "A132", "title": "Combustion Analysis", "course": "RS112",
+       "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :29, "due" : "2024-05-20 11:59PM", "available": "2024-05-13 12:00AM",
+      "due_date": "May 20 2024 11:59PM", "available_date": "May 13 2024 12:00AM" },
+    { "_id": "A133", "title": "Nozzle Design Project", "course": "RS112",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+       ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
+      "due_date": "May 27 2024 11:59PM", "available_date": "May 20 2024 12:00AM" },
+
+      { "_id": "A141", "title": "Propulsion Assignment", "course": "RS113",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+                    "Links to each of the lab assignments",
+                   "Link to the Kanbas application",
+                   "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" : 100, "due" : "2024-05-13 11:59PM", "available": "2024-05-06 12:00AM",
+      "due_date": "May 13 2024 11:59PM", "available_date": "May 6 2024 12:00AM"},
+    { "_id": "A142", "title": "Combustion Analysis", "course": "RS113",
+       "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :29, "due" : "2024-05-20 11:59PM", "available": "2024-05-13 12:00AM",
+      "due_date": "May 20 2024 11:59PM", "available_date": "May 13 2024 12:00AM" },
+    { "_id": "A143", "title": "Nozzle Design Project", "course": "RS113",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+       ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
+      "due_date": "May 27 2024 11:59PM", "available_date": "May 20 2024 12:00AM" },
+
+      { "_id": "A151", "title": "Propulsion Assignment", "course": "RS114",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+                    "Links to each of the lab assignments",
+                   "Link to the Kanbas application",
+                   "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" : 100, "due" : "2024-05-13 11:59PM", "available": "2024-05-06 12:00AM",
+      "due_date": "May 13 2024 11:59PM", "available_date": "May 6 2024 12:00AM"},
+    { "_id": "A152", "title": "Combustion Analysis", "course": "RS114",
+       "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :29, "due" : "2024-05-20 11:59PM", "available": "2024-05-13 12:00AM",
+      "due_date": "May 20 2024 11:59PM", "available_date": "May 13 2024 12:00AM" },
+    { "_id": "A153", "title": "Nozzle Design Project", "course": "RS114",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+       ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
+      "due_date": "May 27 2024 11:59PM", "available_date": "May 20 2024 12:00AM" },
+
+      { "_id": "A161", "title": "Propulsion Assignment", "course": "RS115",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+                    "Links to each of the lab assignments",
+                   "Link to the Kanbas application",
+                   "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" : 100, "due" : "2024-05-13 11:59PM", "available": "2024-05-06 12:00AM",
+      "due_date": "May 13 2024 11:59PM", "available_date": "May 6 2024 12:00AM"},
+    { "_id": "A162", "title": "Combustion Analysis", "course": "RS115",
+       "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :29, "due" : "2024-05-20 11:59PM", "available": "2024-05-13 12:00AM",
+      "due_date": "May 20 2024 11:59PM", "available_date": "May 13 2024 12:00AM" },
+    { "_id": "A163", "title": "Nozzle Design Project", "course": "RS115",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+       ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
+      "due_date": "May 27 2024 11:59PM", "available_date": "May 20 2024 12:00AM" },
+
+      { "_id": "A171", "title": "Propulsion Assignment", "course": "RS116",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+                    "Links to each of the lab assignments",
+                   "Link to the Kanbas application",
+                   "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" : 100, "due" : "2024-05-13 11:59PM", "available": "2024-05-06 12:00AM",
+      "due_date": "May 13 2024 11:59PM", "available_date": "May 6 2024 12:00AM"},
+    { "_id": "A172", "title": "Combustion Analysis", "course": "RS116",
+       "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :29, "due" : "2024-05-20 11:59PM", "available": "2024-05-13 12:00AM",
+      "due_date": "May 20 2024 11:59PM", "available_date": "May 13 2024 12:00AM" },
+    { "_id": "A173", "title": "Nozzle Design Project", "course": "RS116",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+       ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
+      "due_date": "May 27 2024 11:59PM", "available_date": "May 20 2024 12:00AM" },
+
+      { "_id": "A181", "title": "Propulsion Assignment", "course": "RS117",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+                    "Links to each of the lab assignments",
+                   "Link to the Kanbas application",
+                   "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" : 100, "due" : "2024-05-13 11:59PM", "available": "2024-05-06 12:00AM",
+      "due_date": "May 13 2024 11:59PM", "available_date": "May 6 2024 12:00AM"},
+    { "_id": "A182", "title": "Combustion Analysis", "course": "RS117",
+       "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :29, "due" : "2024-05-20 11:59PM", "available": "2024-05-13 12:00AM",
+      "due_date": "May 20 2024 11:59PM", "available_date": "May 13 2024 12:00AM" },
+    { "_id": "A183", "title": "Nozzle Design Project", "course": "RS117",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+       ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
+      "due_date": "May 27 2024 11:59PM", "available_date": "May 20 2024 12:00AM" },
+
+      { "_id": "A191", "title": "Propulsion Assignment", "course": "RS118",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+                    "Links to each of the lab assignments",
+                   "Link to the Kanbas application",
+                   "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" : 100, "due" : "2024-05-13 11:59PM", "available": "2024-05-06 12:00AM",
+      "due_date": "May 13 2024 11:59PM", "available_date": "May 6 2024 12:00AM"},
+    { "_id": "A192", "title": "Combustion Analysis", "course": "RS118",
+       "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :29, "due" : "2024-05-20 11:59PM", "available": "2024-05-13 12:00AM",
+      "due_date": "May 20 2024 11:59PM", "available_date": "May 13 2024 12:00AM" },
+    { "_id": "A193", "title": "Nozzle Design Project", "course": "RS118",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+       ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
+      "due_date": "May 27 2024 11:59PM", "available_date": "May 20 2024 12:00AM" },
+
+      { "_id": "A211", "title": "Propulsion Assignment", "course": "RS119",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+                    "Links to each of the lab assignments",
+                   "Link to the Kanbas application",
+                   "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" : 100, "due" : "2024-05-13 11:59PM", "available": "2024-05-06 12:00AM",
+      "due_date": "May 13 2024 11:59PM", "available_date": "May 6 2024 12:00AM"},
+    { "_id": "A212", "title": "Combustion Analysis", "course": "RS119",
+       "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :29, "due" : "2024-05-20 11:59PM", "available": "2024-05-13 12:00AM",
+      "due_date": "May 20 2024 11:59PM", "available_date": "May 13 2024 12:00AM" },
+    { "_id": "A213", "title": "Nozzle Design Project", "course": "RS119",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+       ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
+      "due_date": "May 27 2024 11:59PM", "available_date": "May 20 2024 12:00AM" },
+
+      { "_id": "A221", "title": "Propulsion Assignment", "course": "RS120",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+                    "Links to each of the lab assignments",
+                   "Link to the Kanbas application",
+                   "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" : 100, "due" : "2024-05-13 11:59PM", "available": "2024-05-06 12:00AM",
+      "due_date": "May 13 2024 11:59PM", "available_date": "May 6 2024 12:00AM"},
+    { "_id": "A222", "title": "Combustion Analysis", "course": "RS120",
+       "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :29, "due" : "2024-05-20 11:59PM", "available": "2024-05-13 12:00AM",
+      "due_date": "May 20 2024 11:59PM", "available_date": "May 13 2024 12:00AM" },
+    { "_id": "A223", "title": "Nozzle Design Project", "course": "RS120",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+       ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
+      "due_date": "May 27 2024 11:59PM", "available_date": "May 20 2024 12:00AM" },
+
+      { "_id": "A231", "title": "Propulsion Assignment", "course": "RS121",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+                    "Links to each of the lab assignments",
+                   "Link to the Kanbas application",
+                   "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" : 100, "due" : "2024-05-13 11:59PM", "available": "2024-05-06 12:00AM",
+      "due_date": "May 13 2024 11:59PM", "available_date": "May 6 2024 12:00AM"},
+    { "_id": "A232", "title": "Combustion Analysis", "course": "RS121",
+       "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+      ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :29, "due" : "2024-05-20 11:59PM", "available": "2024-05-13 12:00AM",
+      "due_date": "May 20 2024 11:59PM", "available_date": "May 13 2024 12:00AM" },
+    { "_id": "A233", "title": "Nozzle Design Project", "course": "RS121",
+      "description" : {
+        "start" : "The assignment is",
+        "method" : "available online",
+        "submission" : "Submit a link to the landing page of your Web application running on Netlify.",
+        "landing_page" :"The landing page should include the following:",
+        "items" : [ "Your full name and section",
+        "Links to each of the lab assignments",
+       "Link to the Kanbas application",
+       "Links to all relevant source code repositories"
+       ],
+        "requirement" : "The Kanabas application should include a link to navigate back to the landing page."
+      },
+      "points" :100, "due" : "2024-05-27 11:59PM", "available": "2024-05-20 12:00AM",
+      "due_date": "May 27 2024 11:59PM", "available_date": "May 20 2024 12:00AM" }   
+
 ]
