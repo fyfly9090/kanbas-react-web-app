@@ -1,5 +1,5 @@
 import * as db from "../../Database";
-import GradesOfStudents from "./GradesOfStudents.1";
+import GradesOfStudents from "./GradesOfStudents";
 
 
 export default function AllStudents({uid , assignments }: { uid: string; assignments: object[]}) {
