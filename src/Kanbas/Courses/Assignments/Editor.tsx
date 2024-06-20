@@ -8,7 +8,6 @@ import ListItems from "./ListItems";
 export default function AssignmentEditor() {
   const {cid, id} = useParams();
   const assignments = db.assignments;
-  /* console.log(assignments); */
   
   return (
     <div id="a2-css-styling-form">
@@ -28,10 +27,6 @@ export default function AssignmentEditor() {
               <div>{assignment.description.landing_page.first}</div>
               <ul className="py-3 mb-0">
                 <ListItems list = {assignment.description.items}/>
-               {/*  <li> {assignment.description.items.first} </li>
-                <li> {assignment.description.items.second}</li>
-                <li> {assignment.description.items.third}</li>
-                <li> {assignment.description.items.fourth}</li> */}
               </ul>
               The Kanabas application should include a link to navigate back to the landing page.
             </fieldset> 
