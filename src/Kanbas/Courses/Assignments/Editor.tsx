@@ -1,40 +1,82 @@
 import { LuCalendarDays } from "react-icons/lu";
-import * as db from "../../Database";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
-import ListItems from "./ListItems";
+import React, { useState } from "react";
+import { addAssignment, updateAssignment } from "./assignmentsReducer";
+import { useSelector, useDispatch } from "react-redux";  
 
 
-export default function AssignmentEditor() {
-  const {cid, id} = useParams();
-  const assignments = db.assignments;
+export default function AssignmentEditor(){
+  /* const params = useParams();
+  console.log("params",params);
+  const id = params.id==="0" ? new Date().getTime().toString(): params.id; */
+  /* console.log(id); */
+  /* const cid =params.cid; */
+  const params = useParams();
+  const id = params.id === "0" ? new Date().getTime().toString() : params.id;
+  const cid = params.cid;
+  const [assignmentName, setAssignmentName] = useState("");
+  const { assignments } = useSelector((state:any) => state.assignmentsReducer);
+  const dispatch = useDispatch(); 
+ 
+  let cur = assignments.find((a:any) => a._id===id);
+  let title = "New Assignment";
+  let description = "New Assignment Description";
+  let points = 100;
+  let dueDate = "";
+  let availableDate = "";
   
+  /* console.log(cur); */
+  if(cur && cur.title  && cur.description && cur.points && 
+    cur.due && cur.available) {
+      title=cur.title;
+      description = cur.description;
+      points = cur.points;
+      dueDate = cur.due;
+      availableDate = cur.available;
+    }
+ /* console.log(cur.title);
+  console.log(cur.description); 
+  console.log(cur.points); */
+  
+  const [newTitle, setNewTitle] = useState(title==="New Assignment" ? "New Assignment": title);
+  const [newDescription, setNewDescription] = useState(description==="New Assignment Description" ? "New Assignment Description": description);
+  const [newPoints, setNewPoints] = useState(points=== 100? 100:points);
+  const [newDueDate, setNewDueDate] = useState(dueDate===""? "":dueDate);
+  const [newAvailableDate, setNewAvailableDate] = useState(availableDate===""? "":availableDate);
+
+/* console.log(newTitle);
+  console.log(newDescription);
+  console.log(newPoints);  */
   return (
     <div id="a2-css-styling-form">
-      {assignments.
+     {/*  {assignments.
         filter((assignment: any) => assignment._id === id)
         .map((assignment: any) => (
-        <>
+        <> */}
           <div className="mb-3">
             <label htmlFor="input1" className="form-label">
               Assignment Name
             </label>
-            <input className="form-control" id="input1" value={assignment.title} />
+            <input className="form-control" id="input1" value={newTitle} 
+                   onChange={(e) => setNewTitle(e.target.value)}/>
             <label htmlFor="input1" className="form-label" />
-            <fieldset className="form-control hide-resize">
-              <div className="pt-3">{assignment.description.start} <span className="text-danger">{assignment.description.method}</span></div>
-              <div className="py-3">{assignment.description.submission}</div>
-              <div>{assignment.description.landing_page.first}</div>
+            <textarea className="form-control hide-resize" onChange={(e)=>setNewDescription(e.target.value)}>
+              {newDescription}
+              {/* <div className="pt-3">The assignment is <span className="text-danger">available online</span></div>
+              <div className="py-3">Submit a link to the landing page of your Web application running on Netlify.</div>
+              <div>The landing page should include the following:</div>
               <ul className="py-3 mb-0">
                 <ListItems list = {assignment.description.items}/>
               </ul>
-              The Kanabas application should include a link to navigate back to the landing page.
-            </fieldset> 
+              The Kanabas application should include a link to navigate back to the landing page. */}
+            </textarea>   
           </div>
           <div className="mb-3 row">  
             <label htmlFor="points1" className="col-sm-4 col-form-label pt-0 label-element">Points</label>
             <div className="col-sm-8">
-            <input id="points1" className="form-control hide-resize" type="number" value={assignment.points} />
+            <input id="points1" className="form-control hide-resize" type="number" value={newPoints}
+                    onChange={(e) => setNewPoints(e.target.valueAsNumber)} />
             </div>
           </div>
           <div className="mb-3 row">
@@ -120,23 +162,26 @@ export default function AssignmentEditor() {
                 <div className="pt-3">
                   <label className="fw-bold pt-2" htmlFor="duedate">Due</label>
                   <div className="input-group" id="duedate">
-                    <input type="text" className="form-control" value={assignment.due}  />
-                    <span className="input-group-text"><LuCalendarDays /></span>
+                    <input type="date" className="form-control" value={newDueDate} 
+                           onChange ={(e) => setNewDueDate(e.target.value)}  />
+                           
+                    {/* <span className="input-group-text"><LuCalendarDays /></span> */}
                   </div>
                 </div>
                 <div className="row">
                   <div className="col-sm-6 col-form-label pe-1">
                     <label className="fw-bold pt-2" htmlFor="startdate">Available from</label>
                       <div className="input-group pe-2" id="startdate">
-                        <input type="text" className="form-control" value={assignment.available}  />
-                        <span className="input-group-text"><LuCalendarDays /></span>
+                        <input type="date" className="form-control" value={newAvailableDate} 
+                               onChange={(e) => setNewAvailableDate(e.target.value)} />
+                        {/* <span className="input-group-text"><LuCalendarDays /></span> */}
                       </div>
                   </div>
                   <div className="col-sm-6 col-form-label ps-1"> 
                     <label className="fw-bold pt-2" htmlFor="untildate">Until</label>
                     <div className="input-group pe-0" id="untildate">
-                      <input type="text" className="form-control"  />
-                      <span className="input-group-text"><LuCalendarDays /></span>
+                      <input type="date" className="form-control"  value = {newDueDate} onChange={(e) => setNewDueDate(e.target.value)}/>
+                     {/*  <span className="input-group-text"><LuCalendarDays /></span> */}
                     </div>
                   </div>
                 </div>
@@ -144,14 +189,24 @@ export default function AssignmentEditor() {
             </div>
           </div>
           <div className="mb-3 tp-border text-nowrap">
-           <Link key={id} to={`/Kanbas/Courses/${cid}/Assignments`} className="wd-assignment-link nounderline">
-              <button className="btn btn-danger float-end mt-2">Save</button>           
-            </Link>
-            <Link key={id} to={`/Kanbas/Courses/${cid}/Assignments`} className="wd-assignment-link nounderline">
-              <button className="btn btn-light float-end mt-2 me-1">Cancel</button>
-           </Link>
+            <button className="btn btn-danger float-end mt-2" 
+              onClick={() => {     console.log("Save clicked");     console.log("params.id:", params.id);     console.log("Assignment Details:", {         _id: id,         title: newTitle,         description: newDescription,         points: newPoints,         due: newDueDate,         available: newAvailableDate,         course: cid     });     if (params.id === "0") {         console.log("Calling addAssignment");         dispatch(addAssignment({             _id: id,             title: newTitle,             description: newDescription,             points: newPoints,             due: newDueDate,             available: newAvailableDate,             course: cid         }));    } else { console.log("Calling updateAssignment"); dispatch(updateAssignment({ _id: id, title: newTitle, description: newDescription, points: newPoints, due: newDueDate, available: newAvailableDate, course: cid })); } }}
+              /*  onClick={() => params.id==="0"? dispatch(addAssignment({ _id: id, title: newTitle, description: newDescription, 
+                points: newPoints, due: newDueDate, available: newAvailableDate, course: cid })) : 
+                dispatch(updateAssignment({_id:id, title:newTitle, description:newDescription, points: newPoints,
+                  due: newDueDate, available: newAvailableDate, course: cid}))} */>
+              <Link key={id} to={`/Kanbas/Courses/${cid}/Assignments`} className="wd-assignment-link add-assignment-btn ">
+                Save
+              </Link>                    
+            </button>           
+            
+            <button className="btn btn-light float-end mt-2 me-1">
+              <Link key={id} to={`/Kanbas/Courses/${cid}/Assignments`} className="wd-assignment-link cancel-assignment-btn">
+                Cancel
+              </Link> 
+            </button>
           </div>
-        </>  
-      ))}
+       {/*  </>  
+      ))} */}
     </div>
 );}
