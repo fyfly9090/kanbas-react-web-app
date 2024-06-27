@@ -15,12 +15,6 @@ import AssignmentDelete from "./AssignmentDelete";
 
 export default function Assignments() {
     const { cid } = useParams();
-    /* const [assignment, setAssignment] = useState<any>({_id:"0", title:"new assignment", course: {cid}, description: "",
-                                                       points:"", due:"", available:""}); */
-    /* const [assignmentDescription, setAssignmentDescription] = useState("");
-    const [assignment, setAssignmentName] = useState("");
-    const [assignmentName, setAssignmentName] = useState("");
-    const [assignmentName, setAssignmentName] = useState(""); */
     const { assignments } = useSelector((state:any) => state.assignmentsReducer);
     const [deleteId, setDeleteId] = useState<string>("");
     const dispatch = useDispatch(); 
@@ -35,8 +29,7 @@ export default function Assignments() {
     console.log(assignments)
     return (
       <div>
-        <AssignmentsControls course_id={cid}/* assignment={assignment} setAssignment={setAssignment} 
-                             addAssignment={()=>dispatch(addAssignment{title:assignmentTitle, course:cid})} */ /><br /><br />
+        <AssignmentsControls course_id={cid}/><br /><br />
         <ul id="wd-assignments" className="list-group rounded-0">
           <li className="wd-assignment list-group-item p-0 mb-5 fs-5 border-gray">
             <div className="wd-title wd-title p-3 ps-2 bg-gray">

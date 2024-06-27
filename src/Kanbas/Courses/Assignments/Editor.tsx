@@ -7,11 +7,6 @@ import { useSelector, useDispatch } from "react-redux";
 
 
 export default function AssignmentEditor(){
-  /* const params = useParams();
-  console.log("params",params);
-  const id = params.id==="0" ? new Date().getTime().toString(): params.id; */
-  /* console.log(id); */
-  /* const cid =params.cid; */
   const params = useParams();
   const id = params.id === "0" ? new Date().getTime().toString() : params.id;
   const cid = params.cid;
@@ -26,7 +21,6 @@ export default function AssignmentEditor(){
   let dueDate = "";
   let availableDate = "";
   
-  /* console.log(cur); */
   if(cur && cur.title  && cur.description && cur.points && 
     cur.due && cur.available) {
       title=cur.title;
@@ -35,9 +29,7 @@ export default function AssignmentEditor(){
       dueDate = cur.due;
       availableDate = cur.available;
     }
- /* console.log(cur.title);
-  console.log(cur.description); 
-  console.log(cur.points); */
+
   
   const [newTitle, setNewTitle] = useState(title==="New Assignment" ? "New Assignment": title);
   const [newDescription, setNewDescription] = useState(description==="New Assignment Description" ? "New Assignment Description": description);
@@ -45,16 +37,10 @@ export default function AssignmentEditor(){
   const [newDueDate, setNewDueDate] = useState(dueDate===""? "":dueDate);
   const [newAvailableDate, setNewAvailableDate] = useState(availableDate===""? "":availableDate);
 
-/* console.log(newTitle);
-  console.log(newDescription);
-  console.log(newPoints);  */
+
   return (
     <div id="a2-css-styling-form">
-     {/*  {assignments.
-        filter((assignment: any) => assignment._id === id)
-        .map((assignment: any) => (
-        <> */}
-          <div className="mb-3">
+      <div className="mb-3">
             <label htmlFor="input1" className="form-label">
               Assignment Name
             </label>
@@ -165,7 +151,7 @@ export default function AssignmentEditor(){
                     <input type="date" className="form-control" value={newDueDate} 
                            onChange ={(e) => setNewDueDate(e.target.value)}  />
                            
-                    {/* <span className="input-group-text"><LuCalendarDays /></span> */}
+           
                   </div>
                 </div>
                 <div className="row">
@@ -174,14 +160,14 @@ export default function AssignmentEditor(){
                       <div className="input-group pe-2" id="startdate">
                         <input type="date" className="form-control" value={newAvailableDate} 
                                onChange={(e) => setNewAvailableDate(e.target.value)} />
-                        {/* <span className="input-group-text"><LuCalendarDays /></span> */}
+            
                       </div>
                   </div>
                   <div className="col-sm-6 col-form-label ps-1"> 
                     <label className="fw-bold pt-2" htmlFor="untildate">Until</label>
                     <div className="input-group pe-0" id="untildate">
                       <input type="date" className="form-control"  value = {newDueDate} onChange={(e) => setNewDueDate(e.target.value)}/>
-                     {/*  <span className="input-group-text"><LuCalendarDays /></span> */}
+      
                     </div>
                   </div>
                 </div>
@@ -190,11 +176,10 @@ export default function AssignmentEditor(){
           </div>
           <div className="mb-3 tp-border text-nowrap">
             <button className="btn btn-danger float-end mt-2" 
-              onClick={() => {     console.log("Save clicked");     console.log("params.id:", params.id);     console.log("Assignment Details:", {         _id: id,         title: newTitle,         description: newDescription,         points: newPoints,         due: newDueDate,         available: newAvailableDate,         course: cid     });     if (params.id === "0") {         console.log("Calling addAssignment");         dispatch(addAssignment({             _id: id,             title: newTitle,             description: newDescription,             points: newPoints,             due: newDueDate,             available: newAvailableDate,             course: cid         }));    } else { console.log("Calling updateAssignment"); dispatch(updateAssignment({ _id: id, title: newTitle, description: newDescription, points: newPoints, due: newDueDate, available: newAvailableDate, course: cid })); } }}
-              /*  onClick={() => params.id==="0"? dispatch(addAssignment({ _id: id, title: newTitle, description: newDescription, 
+               onClick={() => params.id==="0"? dispatch(addAssignment({ _id: id, title: newTitle, description: newDescription, 
                 points: newPoints, due: newDueDate, available: newAvailableDate, course: cid })) : 
                 dispatch(updateAssignment({_id:id, title:newTitle, description:newDescription, points: newPoints,
-                  due: newDueDate, available: newAvailableDate, course: cid}))} */>
+                  due: newDueDate, available: newAvailableDate, course: cid}))} > 
               <Link key={id} to={`/Kanbas/Courses/${cid}/Assignments`} className="wd-assignment-link add-assignment-btn ">
                 Save
               </Link>                    
