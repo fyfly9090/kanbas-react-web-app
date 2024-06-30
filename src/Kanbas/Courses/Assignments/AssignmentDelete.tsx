@@ -8,8 +8,8 @@ export default function AssignmentDelete ({dialogTitle, deleteAssignment}:
                       <h1 className="modal-title fs-5" id="staticBackdropLabel">{dialogTitle}</h1>
                       <button type="button" className="btn-close" data-bs-dismiss="modal"></button>
                     </div>
-                    <div className="modal-body">
-                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
+                    <div className="modal-body align-center">
+                        <button type="button" className="btn btn-secondary me-2" data-bs-dismiss="modal">
                            NO 
                         </button>
                         <button onClick={deleteAssignment} type="button" 

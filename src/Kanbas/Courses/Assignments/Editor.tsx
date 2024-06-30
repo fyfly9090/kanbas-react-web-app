@@ -32,7 +32,8 @@ export default function AssignmentEditor(){
 
   
   const [newTitle, setNewTitle] = useState(title==="New Assignment" ? "New Assignment": title);
-  const [newDescription, setNewDescription] = useState(description==="New Assignment Description" ? "New Assignment Description": description);
+  const [newDescription, setNewDescription] = useState(description==="New Assignment Description" ? 
+                                                                      "New Assignment Description": description);
   const [newPoints, setNewPoints] = useState(points=== 100? 100:points);
   const [newDueDate, setNewDueDate] = useState(dueDate===""? "":dueDate);
   const [newAvailableDate, setNewAvailableDate] = useState(availableDate===""? "":availableDate);
@@ -174,7 +175,7 @@ export default function AssignmentEditor(){
               </fieldset>       
             </div>
           </div>
-          <div className="mb-3 tp-border text-nowrap">
+          <div className="mb-3 tp-border text-nowrap ">
             <button className="btn btn-danger float-end mt-2" 
                onClick={() => params.id==="0"? dispatch(addAssignment({ _id: id, title: newTitle, description: newDescription, 
                 points: newPoints, due: newDueDate, available: newAvailableDate, course: cid })) : 
@@ -191,7 +192,5 @@ export default function AssignmentEditor(){
               </Link> 
             </button>
           </div>
-       {/*  </>  
-      ))} */}
     </div>
 );}
