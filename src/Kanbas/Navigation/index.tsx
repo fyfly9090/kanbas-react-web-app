@@ -1,6 +1,6 @@
 import { AiOutlineDashboard } from "react-icons/ai";
 import { FaInbox, FaRegCircleUser } from "react-icons/fa6";
-import {LiaBookSolid, LiaCalendarSolid, LiaCogSolid} from "react-icons/lia"
+import {LiaBookSolid, LiaCogSolid} from "react-icons/lia"
 import { IoCalendarOutline } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";
 

@@ -8,10 +8,11 @@ import GreenCheck from "./GreenCheck";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import React, { useState } from "react";
-import { addAssignment, deleteAssignment, updateAssignment } from "./assignmentsReducer";
+import React, { useState, useEffect } from "react";
+import { setAssignments, deleteAssignment } from "./assignmentsReducer";
 import { FaTrash } from "react-icons/fa";
 import AssignmentDelete from "./AssignmentDelete";
+import * as client from "./client";
 
 export default function Assignments() {
     const { cid } = useParams();
@@ -25,8 +26,19 @@ export default function Assignments() {
           return new Date(date);
         }
     }
+    const fetchAssignments = async() => {
+      const assignments = await client.findAssignmentsForCourse(cid as string);
+      dispatch(setAssignments(assignments));
+    }
+
+    const removeAssignment = async(assignmentId: string) => {
+      await client.deleteAssignment(assignmentId);
+      dispatch(deleteAssignment(assignmentId));
+    };
    
-    console.log(assignments)
+    useEffect(() => {
+      fetchAssignments();
+    }, [])
     return (
       <div>
         <AssignmentsControls course_id={cid}/><br /><br />
@@ -71,9 +83,9 @@ export default function Assignments() {
                       <FaTrash data-bs-toggle="modal" data-bs-target="#wd-delete-assignment-dialog" onClick={() => setDeleteId(a._id)}/>
                            <AssignmentDelete dialogTitle="Delete assignment" 
                             deleteAssignment={() =>{
-                              dispatch(deleteAssignment(deleteId))
+                              removeAssignment(deleteId)
                               }}/>
-                            </div> 
+                    </div> 
                     <div className="col static-element mt-3"><GreenCheck /></div>
                     <div className="col static-element"><IoEllipsisVertical className="fs-4 centered-right" /></div>
               

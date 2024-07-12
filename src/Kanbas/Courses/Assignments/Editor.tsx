@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { addAssignment, updateAssignment } from "./assignmentsReducer";
 import { useSelector, useDispatch } from "react-redux";  
+import * as client from "./client";
+
 
 
 export default function AssignmentEditor(){
@@ -13,7 +15,18 @@ export default function AssignmentEditor(){
   const [assignmentName, setAssignmentName] = useState("");
   const { assignments } = useSelector((state:any) => state.assignmentsReducer);
   const dispatch = useDispatch(); 
- 
+  
+  const createAssignment = async(assignment: any) => {
+    const newAssginment = await client.createAssignment(cid as string, assignment);
+    dispatch(addAssignment(newAssginment));
+  }
+
+  const saveAssignment = async(assignment: any) => {
+    const status = await client.updateAssignment(assignment);
+    dispatch(updateAssignment(assignment));
+  }
+  
+  console.log(assignments)
   let cur = assignments.find((a:any) => a._id===id);
   let title = "New Assignment";
   let description = "New Assignment Description";
@@ -37,6 +50,7 @@ export default function AssignmentEditor(){
   const [newPoints, setNewPoints] = useState(points=== 100? 100:points);
   const [newDueDate, setNewDueDate] = useState(dueDate===""? "":dueDate);
   const [newAvailableDate, setNewAvailableDate] = useState(availableDate===""? "":availableDate);
+
 
 
   return (
@@ -177,10 +191,10 @@ export default function AssignmentEditor(){
           </div>
           <div className="mb-3 tp-border text-nowrap ">
             <button className="btn btn-danger float-end mt-2" 
-               onClick={() => params.id==="0"? dispatch(addAssignment({ _id: id, title: newTitle, description: newDescription, 
-                points: newPoints, due: newDueDate, available: newAvailableDate, course: cid })) : 
-                dispatch(updateAssignment({_id:id, title:newTitle, description:newDescription, points: newPoints,
-                  due: newDueDate, available: newAvailableDate, course: cid}))} > 
+               onClick={() => params.id==="0"? createAssignment({ _id: id, title: newTitle, description: newDescription, 
+                points: newPoints, due: newDueDate, available: newAvailableDate, course: cid }) : 
+                saveAssignment({_id:id, title:newTitle, description:newDescription, points: newPoints,
+                  due: newDueDate, available: newAvailableDate, course: cid})} > 
               <Link key={id} to={`/Kanbas/Courses/${cid}/Assignments`} className="wd-assignment-link add-assignment-btn ">
                 Save
               </Link>                    

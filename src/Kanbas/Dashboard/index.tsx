@@ -52,7 +52,6 @@ export default function Dashboard({ courses, course, setCourse, addNewCourse,
                                     className="btn btn-warning me-2 float-end">
                                     Edit  
                             </button>
-
                          </div> 
                       </div>
                     </Link>    
