@@ -2,15 +2,16 @@ import { Link } from "react-router-dom";
 
 
 export default function Dashboard({ courses, course, setCourse, addNewCourse,
-  deleteCourse, updateCourse }: {
+  deleteCourse, updateCourse, error }: {
   courses: any[]; course: any; setCourse: (course: any) => void;
   addNewCourse: () => void; deleteCourse: (course: any) => void;
-  updateCourse: () => void; })
+  updateCourse: () => void; error: string})
   {  
      return (
         <div id="wd-dashboard">
             <h1 id="wd-dashboard-title">Dashboard</h1> <hr/>
             <h5>New Course
+              {error && <div className="wd-error alert alert-danger">{error}</div>}
               <button className="btn btn-primary float-end"
                   id="wd-add-new-course-click"
                   onClick={addNewCourse} > Add </button>
@@ -19,6 +20,8 @@ export default function Dashboard({ courses, course, setCourse, addNewCourse,
                 Update
               </button>   
             </h5><br />
+            <input value={course.number} className="form-control mb-2" 
+                   onChange={(e) => setCourse({...course, number:e.target.value})}/>
             <input value={course.name} className="form-control mb-2" 
                    onChange={(e) => setCourse({...course, name:e.target.value})}/>
             <textarea value={course.description} className="form-control"
@@ -28,7 +31,7 @@ export default function Dashboard({ courses, course, setCourse, addNewCourse,
               <div className="row row-cols-1 row-cols-md-5 g-4">
                 {courses.map((course) => (
                   <div className="wd-dashboard-course col margin-element" style={{ width: "300px"}}>
-                    <Link key={course._id} to={`/Kanbas/Courses/${course._id}/Home`} className="text-decoration-none">
+                    <Link key={course._id} to={`/Kanbas/Courses/${course.number}/Home`} className="text-decoration-none">
                       <div className="card rounded-3 overflow-hidden" style={{height:"100%"}}>
                          <img src="/images/reactjs.jpg" height="{160}" />
                          <div className="card-body">
@@ -37,7 +40,7 @@ export default function Dashboard({ courses, course, setCourse, addNewCourse,
                             </span> 
                             <p className="wd-dashboard-course-title card-text" style={{ maxHeight: 53, overflow: "hidden" }}>
                              {course.description}</p>
-                            <Link to={`/Kanbas/Courses/${course._id}/Home`}className="btn btn-primary">Go</Link>
+                            <Link to={`/Kanbas/Courses/${course.number}/Home`}className="btn btn-primary">Go</Link>
                             <button onClick={(event) => {
                                      event.preventDefault();
                                      deleteCourse(course._id);

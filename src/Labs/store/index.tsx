@@ -4,12 +4,14 @@ import counterReducer from "../Lab4/ReduxExamples/CounterRedux/counterReducer";
 import addReducer from "../Lab4/ReduxExamples/AddRedux/addReducer";
 import todosReducer from "../Lab4/ReduxExamples/todos/todosReducer";
 import modulesReducers from "../../Kanbas/Courses/Modules/modulesReducer";
+
 const store = configureStore({
   reducer: {
     helloReducer,
     counterReducer,
     addReducer,
     todosReducer,
+
    
   },
 });

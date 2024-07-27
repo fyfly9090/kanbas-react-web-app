@@ -7,6 +7,8 @@ import * as client from "./Courses/client";
 import { useEffect, useState } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
+import Account from "./Account";
+import ProtectedRoute from "./ProtectedRoute";
 
 
 export default function Kanbas() {
@@ -16,10 +18,15 @@ export default function Kanbas() {
     startDate: "2023-09-10", endDate: "2023-12-15",
     image: "/images/reactjs.jpg", description: "New Description"
   }]);
-  
+  const [error, setError] = useState("");
   const addNewCourse = async () => {
-    const newCourse = await client.createCourse(course);
-    setCourses([...courses, newCourse]);
+    try {
+      const newCourse = await client.createCourse(course);
+      setCourses([...courses, newCourse]);
+      setError("");
+    } catch(err:any) {
+      setError(err.response.data.message);
+    }  
   };
   
   const deleteCourse = async (courseId: string) => {
@@ -57,16 +64,18 @@ export default function Kanbas() {
         </div>
         <div className="flex-fill p-4">
           <Routes>
+            <Route path="/Account/*" element={<Account />} />
             <Route path="/" element={<Navigate to="Dashboard" />} />
-            <Route path="/Account" element={<h2>Account</h2>} />
-            <Route path="/Dashboard" element={<Dashboard
+            {/* <Route path="/Account" element={<h2>Account</h2>} /> */}
+            <Route path="/Dashboard" element={<ProtectedRoute> <Dashboard
               courses={courses}
               course={course}
               setCourse={setCourse}
               addNewCourse={addNewCourse}
               deleteCourse={deleteCourse}
-              updateCourse={updateCourse}/>} />
-            <Route path="/Courses/:cid/*" element={<Courses courses={courses}/>} />
+              updateCourse={updateCourse}
+              error={error}/> </ProtectedRoute> } />
+            <Route path="/Courses/:cid/*" element={<ProtectedRoute><Courses courses={courses} /></ProtectedRoute>} />
             <Route path="/Calendar" element={<h2>Calendar</h2>} />
             <Route path="/Inbox" element={<h2>Inbox</h2>} />
           </Routes>

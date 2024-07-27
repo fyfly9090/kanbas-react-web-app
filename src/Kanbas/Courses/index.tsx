@@ -6,11 +6,12 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/Editor";
 import { FaAlignJustify } from "react-icons/fa";
 import Grades from "./Grades";
+import PeopleTable from "./People/Table";
 
 
 export default function Courses({ courses }: { courses: any[]; }) {
   const {cid} = useParams();
-  const course = courses.find((course) => course._id === cid);
+  const course = courses.find((course) => course.number === cid);
   const { pathname } = useLocation();
     return (
       <div id="wd-courses">
@@ -25,12 +26,14 @@ export default function Courses({ courses }: { courses: any[]; }) {
           <div className="flex-fill">
             <Routes>
               <Route path="/" element={<Navigate to="Home" />} />
-              <Route path="Home" element={<Home />} />
-              <Route path="Modules" element={<Modules />} />
-              <Route path="Assignments" element={<Assignments />} />
-              <Route path="Assignments/:id" element={<AssignmentEditor/>} />
-              <Route path="Grades" element={<h2><Grades /></h2>} />
-              <Route path="Quizzes" element={<h2>Quizzes</h2>} />
+              <Route path="/Home" element={<Home />} />
+              <Route path="/Modules" element={<Modules />} />
+              <Route path="/Assignments" element={<Assignments />} />
+              <Route path="/Assignments/:id" element={<AssignmentEditor/>} />
+              <Route path="/People" element={<PeopleTable />} />
+              <Route path="/People/:uid" element={<PeopleTable />} />
+              <Route path="/Grades" element={<h2><Grades /></h2>} />
+              <Route path="/Quizzes" element={<h2>Quizzes</h2>} />
             </Routes>
           </div>
         </div>

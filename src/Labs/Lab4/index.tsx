@@ -10,6 +10,7 @@ import PassingDataOnEvent from "./PassingDataOnEvent";
 import PassingFunctions from "./PassingFunctions";
 import StringStateVariables from "./StringStateVariables";
 import ReduxExamples from "./ReduxExamples";
+import Acme from "./test";
 
 
 
@@ -33,6 +34,7 @@ export default function Lab4() {
         <ArrayStateVariable />
         <ParentStateComponent />
         <ReduxExamples />
+        <Acme />
       </div>  
     )
 }
