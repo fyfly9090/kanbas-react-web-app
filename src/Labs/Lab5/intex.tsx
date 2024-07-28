@@ -8,7 +8,7 @@ import WorkingWithObjectsAsynchronously from "./WorkingWithObjectsAsynchronously
 import EnvironmentVariables from "./EnvironmentVariables";
 
 
-const REMOTE_SERVER = process.env.REACT_APP_REMOTE_SERVER
+const REMOTE_SERVER = process.env.REACT_APP_REMOTE_SERVER || "http://localhost:4000";
 console.log(REMOTE_SERVER)
 export default function Lab5() {
   return (
